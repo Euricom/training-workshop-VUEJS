@@ -20,11 +20,12 @@
         textarea,
         #app div {
             display: inline-block;
-            width: 49%;
+            width: 50%;
             height: 100%;
             vertical-align: top;
             box-sizing: border-box;
             padding: 0 20px;
+            float: left;
         }
         
         textarea {
@@ -41,12 +42,35 @@
         code {
             color: #f66;
         }
+        
+        button {
+            position: absolute;
+            right: 51%;
+            top: 1%;
+            background: #67c088;
+            box-shadow: 0 2px 0 0 #47ad6d;
+            border: 0;
+            border-radius: 3px;
+            color: #FFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Fedra Sans Screen Regular 2", "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            padding: 1.0125rem 1.5rem 0.65217rem;
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: top;
+            word-wrap: break-word;
+        }
     </style>
 
 </head>
 
 <body>
     <div id="app">
+        <button @click="reset">Reset</button>
         <textarea :value="input" @input="update"></textarea>
         <markdown :markdown="input"></markdown>
     </div>

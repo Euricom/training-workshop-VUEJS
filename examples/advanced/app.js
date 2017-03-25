@@ -16,6 +16,10 @@ new Vue({
     methods: {
         update: function (e) {
             this.input = e.target.value
-        }
+        },
+
+        reset: function () {
+            this.input = '';
+        },
     }
 })
