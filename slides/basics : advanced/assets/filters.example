@@ -1,0 +1,21 @@
+<div id="app">
+    <h1>Filters:</h1>
+    <p>{{ message  }}</p>
+    <p>{{ message | toUpperCase }}</p>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello World',
+    },
+    filters: {
+        toUpperCase: function (value) {
+            if (!value) return '';
+            return value.toString().toUpperCase()
+        }
+    }
+  });
+</script>
+

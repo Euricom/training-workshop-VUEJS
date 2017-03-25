@@ -1,0 +1,16 @@
+<div id="app">
+    <ul>
+       <li v-for="name in names">{{name}}</li>
+    </ul>
+</div>
+
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            names: ['Joe', 'Mary', 'Jane'],
+        },
+    });
+</script>
+

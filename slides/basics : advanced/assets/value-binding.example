@@ -1,0 +1,26 @@
+<div id="app">
+    <!-- Simple binding (mustache binding) -->
+    <p>{{message}}</p>
+
+    <!-- v-html directive -->
+    <div v-html="rawHtml"></div>
+
+    <!-- Using javascript expressions -->
+    <p> {{ number + 1 }} </p>
+    <p> {{ ok ? 'YES' : 'NO' }} </p>
+    <p> {{ message.split('').reverse().join('') }} </p>
+</div>
+
+<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+
+<script>
+new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello World',
+        rawHtml: '<h1>This is my html</h1>',
+        number: 10,
+        ok: true,
+    },
+});
+</script>

@@ -1,0 +1,20 @@
+<div id="app">
+    <div v-if="show">
+      Now you see me
+    </div>
+    <div v-else>
+      Now you don't
+    </div>
+    
+    <h1 v-show="show">Hello!</h1>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            show: true,
+        },
+    });
+</script>
+

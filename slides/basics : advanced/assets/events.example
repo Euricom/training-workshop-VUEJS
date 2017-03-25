@@ -1,0 +1,23 @@
+<div id="app">
+    <!-- `greet` is the name of a method defined below -->
+    <button v-on:click="greet('VueJS', $event)">ClickMe</button>
+
+    <!-- shorthand -->
+    <div @click="greet('Shorthand', $event)">ClickMe</div>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    methods: {
+        greet: function (name, event) {
+            alert('Hello ' + name + '!');
+
+            // `event` is the native DOM event
+            if (event) {
+                alert(event.target.tagName)
+            }
+        }
+    }
+  });
+</script>
