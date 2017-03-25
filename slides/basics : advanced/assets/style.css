@@ -17,3 +17,13 @@ a.code-block {
 .lifecycle {
     margin-top: -185px !important;
 }
+
+.social-icon {
+    margin: 30px 10px;
+    display: inline-block;
+}
+
+.meMyselfAndI {
+    border: 12px solid #2c3e50;
+    border-radius: 150px;
+}

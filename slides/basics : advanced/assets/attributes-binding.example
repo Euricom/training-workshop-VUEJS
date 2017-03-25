@@ -1,0 +1,24 @@
+<div id="app">
+    <button 
+        v-bind:title="hoverTitle" 
+        :class="{ 'loading': isLoading }" 
+        @click="click" 
+    >
+        Submit
+    </button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            hoverTitle: 'Submit form',  
+            isLoading: false,
+        },
+        methods: {
+            click: function() {
+                this.isLoading = !this.isLoading; 
+            },
+        }
+    });
+</script>

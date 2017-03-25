@@ -1,0 +1,14 @@
+<div id="app">
+    <my-component></my-component>
+</div>
+
+<script>
+    Vue.component('my-component', {
+        template: 'A custom component!'
+    })
+
+    new Vue({
+        el: '#app',
+    });
+</script>
+
