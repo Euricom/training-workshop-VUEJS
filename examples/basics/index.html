@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics</title>
+
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        #app {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        p {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .todo-state {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="app">
+        <ul>
+            <li class="todo-state" v-for="todo in todos" @click="toggle(todo)">
+                <span v-if="todo.completed"> &#9745; </span>
+                <span v-else> &#9744; </span>
+
+                <p> {{ todo.task }} </p>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
