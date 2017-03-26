@@ -3,7 +3,7 @@
 ## Content
 
 - The basics & advanced part
-    - [View slides](http://uptight-branch.surge.sh)
+    - [View slides](#)
 
 ## Examples
 
