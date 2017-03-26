@@ -1,16 +1,16 @@
 <div id="app">
-    <form @submit.prevent="greet($event)">
-        <input 
-            placeholder="Input text here..."
-        />
-    </form>
+    <a href="https://vuejs.org/" @click.prevent="greet()">
+        default click action is prevented
+    </a>
 </div>
 
 <script>
     new Vue({
         el: '#app',
-        greet: function (event) {
-            alert('submitted');
+        methods: {
+            greet: function (event) {
+                alert('Hello VueJS');
+            }
         }
     });
 </script>

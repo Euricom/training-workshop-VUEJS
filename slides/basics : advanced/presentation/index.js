@@ -31,7 +31,10 @@ const images = {
   robbert: require("../assets/robbert.jpg"),
   facebook: require("../assets/facebook.png"),
   twitter: require("../assets/twitter.png"),
-  github: require("../assets/github.png")
+  github: require("../assets/github.png"),
+  frameworks: require("../assets/a2v-frameworks.png"),
+  diagram1: require("../assets/1-ADuCd_GcORWlpCzTASmkxQ.png"),
+  diagram2: require("../assets/frontend-stacked.png")
 };
 
 preloader(images);
@@ -78,7 +81,7 @@ export default class Presentation extends React.Component {
 
           <Text textSize="1em" textColor="secondary" margin="20px 0px 0px" bold>
             Bootcamper
-              </Text>
+          </Text>
 
           <div>
             <span className="social-icon"><a href="https://www.facebook.com/wolfsrobbert" target="_blank"><Image src={images.facebook.replace("/", "")} height="24px" /></a></span>
@@ -131,6 +134,19 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={1} textColor="tertiary" caps margin="100px">Introduction</Heading>
+        </Slide>
+
+         <Slide transition={["slide"]} bgColor="primary">
+          <Image src={images.frameworks.replace("/", "")} width="500px"/>
+        </Slide>
+        
+        <Slide transition={["slide"]} bgColor="primary">
+          <Image src={images.diagram1.replace("/", "")} width="900px"/>
+          <a className="dark" href="https://github.com/vuejs/vue" target="_blank">Latest github stats of VueJS</a>
+        </Slide>
+        
+         <Slide transition={["slide"]} bgColor="primary">
+          <Image src={images.diagram2.replace("/", "")} width="900px"/>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary">
@@ -278,9 +294,9 @@ export default class Presentation extends React.Component {
           lang="html"
           code={require("raw-loader!../assets/event-modifiers.example")}
           ranges={[
-            { loc: [0, 7] },
-            { loc: [8, 16] },
-            { loc: [1, 2] },
+            { loc: [0, 5] },
+            { loc: [7, 15] },
+            { loc: [1, 4] },
             { loc: [0, 16], note: "http://codepen.io/RobbertWolfs/pen/yMqjLJ" }
           ]}
         />
