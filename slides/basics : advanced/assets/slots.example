@@ -1,0 +1,36 @@
+<div id="app">
+    <my-component>
+        <span> Insert text here </span>
+    </my-component>
+    
+    <my-other-component>
+        <div slot="header">
+            Insert company name and logo
+        </div>
+        
+        <span> Company information 1 </span>
+        <span> Company information 2 </span>
+        
+        <div slot="footer">
+            © 2017 - company information
+        </div>
+    </my-other-component>
+</div>
+
+Vue.component('myComponent', {
+     template: `
+        <div>
+            <slot></slot>
+        </div>
+    `,
+});
+
+Vue.component('myOtherComponent', {
+     template: `
+        <div>
+            <slot name="header"></slot>
+            <slot></slot>
+            <slot name="footer"></slot>
+        </div>
+    `,
+});

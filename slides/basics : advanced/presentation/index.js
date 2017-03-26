@@ -281,7 +281,7 @@ export default class Presentation extends React.Component {
             { loc: [0, 7] },
             { loc: [8, 16] },
             { loc: [1, 2] },
-            { loc: [0, 16], note: "http://codepen.io/RobbertWolfs/pen/evjzMz" }
+            { loc: [0, 16], note: "http://codepen.io/RobbertWolfs/pen/yMqjLJ" }
           ]}
         />
 
@@ -326,25 +326,113 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="secondary" caps margin="100px">Props</Heading>
         </Slide>
 
+        <CodeSlide
+          className="codeSlide"
+          transition={[""]}
+          lang="html"
+          code={require("raw-loader!../assets/props.example")}
+          ranges={[
+            { loc: [7, 19] },
+            { loc: [12, 18] },
+            { loc: [8, 12] },
+            { loc: [1, 2] },
+            { loc: [20, 27] },
+            { loc: [2, 3] },
+            { loc: [0, 13], note: "http://codepen.io/RobbertWolfs/pen/evjzMz" }
+          ]}
+        />
+
+        <Slide transition={["slide"]} bgColor="primary">
+          <Heading size={2} textColor="secondary" caps margin="100px">Prop validation</Heading>
+        </Slide>
+
+        <CodeSlide
+          className="codeSlide"
+          transition={[""]}
+          lang="html"
+          code={require("raw-loader!../assets/prop-validation.example")}
+          ranges={[
+            { loc: [3, 5] },
+            { loc: [6, 8] },
+            { loc: [9, 14] },
+            { loc: [15, 20] },
+            { loc: [21, 32] },
+            { loc: [33, 39] }
+          ]}
+        />
+
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={2} textColor="secondary" caps margin="100px">Events</Heading>
         </Slide>
+
+        <CodeSlide
+          className="codeSlide"
+          transition={[""]}
+          lang="html"
+          code={require("raw-loader!../assets/custom-events.example")}
+          ranges={[
+            { loc: [8, 23] },
+            { loc: [9, 17] },
+            { loc: [17, 22] },
+            { loc: [19, 20] },
+            { loc: [1, 4] },
+            { loc: [24, 32] },
+            { loc: [0, 13], note: "http://codepen.io/RobbertWolfs/pen/LWBQWY" }
+          ]}
+        />
 
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={2} textColor="secondary" caps margin="100px">Slots</Heading>
         </Slide>
 
+        <CodeSlide
+          className="codeSlide"
+          transition={[""]}
+          lang="html"
+          code={require("raw-loader!../assets/slots.example")}
+          ranges={[
+            { loc: [19, 26] },
+            { loc: [1, 4] },
+            { loc: [27, 36] },
+            { loc: [5, 17] },
+            { loc: [0, 36], note: "http://codepen.io/RobbertWolfs/pen/RpBQLG" }
+          ]}
+        />
+
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={2} textColor="secondary" caps margin="100px">Forms</Heading>
         </Slide>
 
-        <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={2} textColor="secondary" caps margin="100px">Lifecyclehooks</Heading>
-        </Slide>
+        <CodeSlide
+          className="codeSlide"
+          transition={[""]}
+          lang="html"
+          code={require("raw-loader!../assets/forms.example")}
+          ranges={[
+            { loc: [1, 8] },
+            { loc: [9, 19] },
+            { loc: [20, 37] },
+            { loc: [38, 49] },
+            { loc: [50, 57] },
+            { loc: [0, 59], note: "http://codepen.io/RobbertWolfs/pen/yMqvqQ" }
+          ]}
+        />
 
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={2} textColor="secondary" caps margin="100px">Directives</Heading>
+          <Heading size={2} textColor="secondary" caps margin="100px">Lifecyclehooks</Heading>
+          <a className="dark" href="https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram" target="_blank">Lifecycle diagram</a>
         </Slide>
+
+        <CodeSlide
+          className="codeSlide"
+          transition={[""]}
+          lang="html"
+          code={require("raw-loader!../assets/lifecycle.example")}
+          ranges={[
+            { loc: [1, 16] },
+            { loc: [1, 16], note: "http://codepen.io/RobbertWolfs/pen/OpwvJv" }
+          ]}
+        />
 
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={3} textColor="quartenary" caps margin="100px">Exercise</Heading>

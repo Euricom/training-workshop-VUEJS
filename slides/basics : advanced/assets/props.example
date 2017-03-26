@@ -1,0 +1,29 @@
+<div id="app">
+    <my-component title="My Component Title" sub-title="Awesome slogan"></my-component>
+    <my-component :title="title" :sub-title="subTitle"></my-component>
+</div>
+
+<script>
+
+Vue.component('myComponent', {
+     props: [
+        'title',
+        'sub-title'
+    ],
+    template:  `
+        <div>
+            <h1>{{title}}</h1>
+            <h3>{{subTitle}}</h3>
+        </div>
+    `,
+});
+
+new Vue({
+    el: '#app',
+    data: {
+        title: 'Dynamic props',
+        subTitle: 'Use the v-bind directive'
+    }
+});
+
+</script>

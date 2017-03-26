@@ -1,0 +1,34 @@
+<div id="app">
+    <my-component 
+        @handled="onHandled($event)"
+    ></my-component>
+</div>
+
+<script>
+
+Vue.component('myComponent', {
+    template: `
+        <div>
+            <h1>My Super Button</h1>
+            <button 
+                @click="onClick()"
+            >Finish</button>
+        </div>
+    `,
+    methods: {
+        onClick: function() {
+            this.$emit('handled', { id: 123 })
+        }
+    }
+});
+
+new Vue({
+    el: '#app',
+    methods: {
+        onHandled: function(event) {
+            alert('handled ' + event.id);
+        }
+    }
+});
+
+</script>

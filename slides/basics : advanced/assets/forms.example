@@ -1,0 +1,83 @@
+<div id="app">
+    <div class="form-group">
+        <input 
+            v-model="message" 
+            placeholder="edit me"
+        >
+        <p>Message is: {{ message }}</p>
+    </div>
+    
+    <div class="form-group">
+        <input 
+            type="checkbox" 
+            id="checkbox" 
+            v-model="checked"
+        >
+        <label 
+            for="checkbox"
+        >{{ checked }}</label>
+    </div>
+        
+    <div class="form-group">
+        <input 
+            type="radio" 
+            id="one" 
+            value="One" 
+            v-model="picked"
+        >
+        
+        <input 
+            type="radio" 
+            id="two" 
+            value="Two" 
+            v-model="picked"
+        >
+        
+        <span>Picked: {{ picked }}</span>
+    </div>
+        
+    <div class="form-group">
+        <select v-model="selected">
+            <option 
+                v-for="option in options" 
+                :value="option.value"
+            >
+                {{ option.text }}
+            </option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+    </div>
+
+    <form @submit.prevent="addUser">
+        <input 
+            type="text" 
+            v-model="user.firstName"
+        >
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            message: '',
+            checked: false,
+            picked: 'One',
+            selected: 'red',
+            options: [{
+                text: 'Red',
+                value: 'red',
+            },{
+                text: 'Blue',
+                value: 'blue',
+            },{
+                text: 'Green',
+                value: 'green',
+            }],
+        }
+    });
+
+</script>

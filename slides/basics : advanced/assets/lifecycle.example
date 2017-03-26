@@ -1,0 +1,18 @@
+<script>
+    new Vue({
+        created: function() {
+            // Instance is created
+        }
+        mounted: function() {
+            // vm.$el is created (html in doc)
+        },
+        updated: function() {
+            // Called after a data change
+        },
+        destroyed: function() {
+            // Called after a Vue instance 
+            // has been destroyed
+        }
+    })
+</script>
+
