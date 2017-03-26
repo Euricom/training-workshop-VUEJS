@@ -3,7 +3,7 @@
 ## Content
 
 - The basics & advanced part
-    - [View slides](#)
+    - [View codepen demos](http://codepen.io/collection/AVKRvq/)
 
 ## Examples
 
