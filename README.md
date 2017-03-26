@@ -11,7 +11,7 @@
     - [Exercise](http://puffy-order.surge.sh/)
 
 - Advanced
-    - [Exercise](spurious-veil.surge.sh)
+    - [Exercise](http://spurious-veil.surge.sh)
 
 
 ## View Slides (in presentation style)
