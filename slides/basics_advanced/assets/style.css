@@ -27,3 +27,17 @@ a.code-block {
     border: 12px solid #2c3e50;
     border-radius: 150px;
 }
+
+.markdown ul li {
+    font-size: 25px !important;
+}
+
+.markdown h4,
+.markdown h6 {
+    color: #2c3e50 !important;
+}
+
+.markdown a {
+    color: #e96900;
+    font-size: 20px;
+}

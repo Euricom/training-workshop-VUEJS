@@ -9,7 +9,8 @@ import {
   ListItem,
   List,
   Slide,
-  Text
+  Text,
+  Markdown
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
@@ -129,17 +130,17 @@ export default class Presentation extends React.Component {
           <Heading size={1} textColor="tertiary" caps margin="100px">Introduction</Heading>
         </Slide>
 
-         <Slide transition={["slide"]} bgColor="primary">
-          <Image src={images.frameworks.replace("/", "")} width="500px"/>
-        </Slide>
-        
         <Slide transition={["slide"]} bgColor="primary">
-          <Image src={images.diagram1.replace("/", "")} width="900px"/>
+          <Image src={images.frameworks.replace("/", "")} width="500px" />
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="primary">
+          <Image src={images.diagram1.replace("/", "")} width="900px" />
           <a className="dark" href="https://github.com/vuejs/vue" target="_blank">Latest github stats of VueJS</a>
         </Slide>
-        
-         <Slide transition={["slide"]} bgColor="primary">
-          <Image src={images.diagram2.replace("/", "")} width="900px"/>
+
+        <Slide transition={["slide"]} bgColor="primary">
+          <Image src={images.diagram2.replace("/", "")} width="900px" />
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary">
@@ -271,6 +272,26 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={3} textColor="quartenary" caps margin="100px">Exercise</Heading>
+        </Slide>
+
+         <Slide transition={["slide"]} className="markdown">
+           <Markdown >
+            {`
+#### Create a VueJS app: 
+###### Markup Editor and Preview:
+
+* Add index.html and app.js
+* Load your VueJS with a script tag and [CDN](https://unpkg.com/vue@2.1.10/dist/vue.js)
+* Show a list of hardcoded (array) todo items
+* Add a button to toggle the todo (todo/completed)
+
+###### Optional:
+- Add a input and add button to add an todo
+
+[Demo](http://puffy-order.surge.sh/)
+
+            `}
+          </Markdown>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary">
@@ -445,6 +466,26 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={3} textColor="quartenary" caps margin="100px">Exercise</Heading>
+        </Slide>
+
+        <Slide transition={["slide"]} className="markdown">
+           <Markdown >
+            {`
+#### Create a VueJS app: 
+###### Markup Editor and Preview:
+
+* Add index.html and app.js
+* Load your VueJS with a script tag and [CDN](https://unpkg.com/vue@2.1.10/dist/vue.js)
+* Create the markupTextBox as a component
+* Use the [marked](https://unpkg.com/marked@0.3.6) library to convert markup 2 html
+
+###### Optional:
+- Add button to reset input
+
+[Demo](http://spurious-veil.surge.sh)
+
+            `}
+          </Markdown>
         </Slide>
       </Deck>
     );
