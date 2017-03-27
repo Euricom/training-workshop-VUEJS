@@ -101,31 +101,24 @@ export default class Presentation extends React.Component {
             <ListItem>
               Basics
               <List margin="0 0 0 90px">
-                <ListItem>
-                  Setup
-                   <List margin="0 0 0 90px">
-                    <ListItem>Bindings / Filters / Events</ListItem>
-                  </List>
-                </ListItem>
+                <ListItem>Simple Setup</ListItem>
+                <ListItem>Bindings / Filters / Events</ListItem>
                 <ListItem>Exercise</ListItem>
               </List>
             </ListItem>
             <ListItem>
               Advanced
               <List margin="0 0 0 90px">
-                <ListItem>
-                  Addition
-                   <List margin="0 0 0 90px">
-                    <ListItem>Components / Forms / Lifecycle</ListItem>
-                  </List>
-                </ListItem>
+                <ListItem>Components / Forms / Lifecycle</ListItem>
                 <ListItem>Exercise</ListItem>
               </List>
             </ListItem>
             <ListItem>
               Master
               <List margin="0 0 0 90px">
-                <ListItem>Vue files</ListItem>
+                <ListItem>Vue CLI</ListItem>
+                <ListItem>.Vue files</ListItem>
+                <ListItem>Loading Data</ListItem>
                 <ListItem>Routing</ListItem>
               </List>
             </ListItem>
