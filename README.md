@@ -18,7 +18,7 @@
 
 #### Basic & Advanced
 
-To view the slides locally, watch the [README](./slides/basics%20:%20advanced/README.markdown) file inside the slides/basics : advanced directory.
+To view the slides locally, watch the [README](./slides/basics_advanced/README.markdown) file inside the slides/basics : advanced directory.
 
 ## License
 
