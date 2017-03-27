@@ -240,10 +240,10 @@ import otherComponent from 'component/otherComponent'
 export default {
   data () {
     return {
-      title: 'Hello world!'
+      title: 'Hello world!',
     };
   }
-}
+};
 </script>
 
 <style lang="sass" scoped>
@@ -285,10 +285,10 @@ export default {
   data() {
     // data model of message component
     return {
-      message: 'Hello from messsage'
+      message: 'Hello from messsage',
     };
   },
-}
+};
 </script>
 ```
 
@@ -308,7 +308,7 @@ app.vue
 
 <script>
 // import the component
-import Message from './components/message.vue'
+import Message from './components/message'
 export default {
   components: {
     // list the components used in this component
@@ -531,8 +531,8 @@ Create routes
 
 ```js
 // Import components
-import Foo from './components/foo.vue'
-import Bar from './components/bar.vue'
+import Foo from './components/foo'
+import Bar from './components/bar'
 ```
 
 Create router and assign to app
@@ -591,7 +591,7 @@ You can add the style
 ```html
 <style>
 .router-link-active {
-  color: red;
+  background-color: lightgray;
 }
 </style>
 ```
@@ -600,7 +600,14 @@ You can add the style
 
 ## HTML5 History Mode
 
-The default mode for vue-router is hash mode. To get rid of the hash, we can use the router's history mode.
+The default mode for vue-router is hash mode.
+
+```js
+// hash mode
+http://localhost:8080/#/bar
+```
+
+To get rid of the hash, we can use the router's history mode.
 
 ```js
 const router = new VueRouter({
@@ -608,6 +615,14 @@ const router = new VueRouter({
     routes: [...]
 })
 ```
+
+Resolves as
+
+```js
+// history mode
+http://localhost:8080/bar
+```
+
 
 > Make sure your server will fallback to the index.html file for all non resolved routes.
 
