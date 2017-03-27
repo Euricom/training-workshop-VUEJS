@@ -22,7 +22,27 @@ Copyright (c) 2017 Euricom nv.
 }
 </style>
 
+---
+
+# Who Am I
+
 ----
+
+## Peter Cosemans
+
+<image src="./images/pc.jpg" width="300px">
+
+- Consultant / Frontend Architect @Euricom
+- Architect, Team Lead, Tech Coach, Trainer
+    + JavaScript
+    + AngularJS, Angular, React, VueJS
+    + NodeJS, Mobile (hybrid), MongoDB
+- Contact
+    + peter.cosemans@euri.com
+    + https://github.com/cosemansp
+    + https://twitter.com/cosemansp (don't use it)
+
+---
 
 # Content
 
@@ -580,7 +600,6 @@ And that's it.
     <a href="/foo">Go to Foo</a>
     <!-- router link  -->
     <router-link to="/foo">Go to Foo</router-link>
-    <router-link :to="{ name: 'bar'}">Go to Bar</router-link>
 </p>
 ```
 
@@ -623,7 +642,6 @@ Resolves as
 http://localhost:8080/bar
 ```
 
-
 > Make sure your server will fallback to the index.html file for all non resolved routes.
 
 ----
@@ -634,37 +652,22 @@ Specify parameter with a colon
 
 ```js
 routes: [
-    { path: '/foo/:id?', component: Foo }
+    { path: '/foo/:id?', name: 'Foo', component: Foo }
 ]
 ```
 
-they will map to corresponding fields on `$route.params`.
+Route link
 
 ```html
-<template>
-    <div>
-        <h1>Foo</h1>
-        <span>Route param: {{ $route.params.id }}</span>
-    </div>
-</template>
+<router-link :to="{ path: '/foo/${id}'}">Go to Foo</router-link>
+<router-link :to="{ name: 'Foo', params: { id: 123 } }">Go to Bar</router-link>
 ```
 
-you can have multiple parameters
-
-```js
-routes: [
-    { path: '/foo/:username/post/:id', component: Foo }
-]
-```
-
-----
-
-## Access router from code
-
-route parameters
+Access router from code
 
 ```js
 ready () {
+    console.log(this.$route.params.id)
     getContent(this.$route.params.id)
         .then(result => {
             this.content = result
@@ -672,14 +675,17 @@ ready () {
 }
 ```
 
-navigate
+----
+
+## Navigate from code
 
 ```js
+// path based
 $router.push('bar')
 $router.push({ path: 'bar' })
-$router.push({ path: 'foo', params: { id: 123 }})
+$router.push({ path: `foo/${id}`})
 
-// named (you have to specify a name on the route)
+// named based
 $router.push({ name: 'Foo', params: { id: 123 }})
 
 // go back
