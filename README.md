@@ -4,6 +4,7 @@
 
 - Basics & Advanced part
     - [View codepen demos](http://codepen.io/collection/AVKRvq/)
+    - [Slides](http://useless-cherry.surge.sh/#/)
 - Master
     - [Slides](./slides/master/vuejs-master.md)
 
