@@ -2,7 +2,7 @@
 ## Markup Editor and Preview
 
 - Add textbox for [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) input
-- Create the a component to view the markdown as html
+- Create a vuejs component to view the markdown as html
 - Use the [marked library](https://github.com/chjj/marked) to convert markup 2 html
 - Add a button to reset (clear) the input area
 
@@ -11,6 +11,7 @@ See [Demo](http://spurious-veil.surge.sh)
 Optional:
 
 - Store your markup text in localstorage, so you can close and reopen the editor and your text is restored.
+- Add some styling :)
 
 ## Create your html file
 
