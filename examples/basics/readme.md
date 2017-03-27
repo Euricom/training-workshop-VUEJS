@@ -7,6 +7,8 @@ Tips:
 - Show a list of hardcoded (array) task items
 - Add a button to toggle the todo (todo/completed)
 
+See [Demo](http://puffy-order.surge.sh/)
+
 Optional:
 - Add an input and add button to add a new todo
 
