@@ -1,13 +1,15 @@
-# training-workshop-VUEJS
+# Training-workshop-VUEJS
 
 ## Content
 
-- The basics & advanced part
+- Basics & Advanced part
     - [View codepen demos](http://codepen.io/collection/AVKRvq/)
+- Master
+    - [Slides](./slides/master/vuejs-master.md)
 
 ## Examples
 
-- Basics 
+- Basics
     - [Exercise](http://puffy-order.surge.sh/)
 
 - Advanced
@@ -18,7 +20,7 @@
 
 #### Basic & Advanced
 
-To view the slides locally, watch the [README](./slides/basics_advanced/README.markdown) file inside the slides/basics : advanced directory.
+To view the slides locally, watch the [README](./slides/basics%20:%20advanced/README.markdown) file inside the slides/basics : advanced directory.
 
 ## License
 
