@@ -277,16 +277,10 @@ export default class Presentation extends React.Component {
          <Slide transition={["slide"]} className="markdown">
            <Markdown >
             {`
-#### Create a VueJS app: 
-###### Markup Editor and Preview:
+#### Create a VueJS app:
+###### Simple Todo
 
-* Add index.html and app.js
-* Load your VueJS with a script tag and [CDN](https://unpkg.com/vue@2.1.10/dist/vue.js)
-* Show a list of hardcoded (array) todo items
-* Add a button to toggle the todo (todo/completed)
-
-###### Optional:
-- Add a input and add button to add an todo
+[Walkthrough](https://github.com/Euricom/training-workshop-VUEJS/blob/master/examples/basics/readme.md)
 
 [Demo](http://puffy-order.surge.sh/)
 
@@ -471,16 +465,10 @@ export default class Presentation extends React.Component {
         <Slide transition={["slide"]} className="markdown">
            <Markdown >
             {`
-#### Create a VueJS app: 
-###### Markup Editor and Preview:
+#### Create a VueJS app:
+###### Markup Editor and Preview
 
-* Add index.html and app.js
-* Load your VueJS with a script tag and [CDN](https://unpkg.com/vue@2.1.10/dist/vue.js)
-* Create the markupTextBox as a component
-* Use the [marked](https://unpkg.com/marked@0.3.6) library to convert markup 2 html
-
-###### Optional:
-- Add button to reset input
+[Walkthrough](https://github.com/Euricom/training-workshop-VUEJS/blob/master/examples/advanced/readme.md)
 
 [Demo](http://spurious-veil.surge.sh)
 
