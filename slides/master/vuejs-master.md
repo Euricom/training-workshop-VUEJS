@@ -2,6 +2,8 @@
 <img src="./images/vue-plugins.jpeg" width="700px" /><br>
 <small>by Peter Cosemans</small>
 
+https://github.com/Euricom/training-workshop-VUEJS/edit/master/slides/master/vuejs-master.md
+
 <small>
 Copyright (c) 2017 Euricom nv.
 </small>
