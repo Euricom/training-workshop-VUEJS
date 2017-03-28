@@ -1,6 +1,8 @@
 # Exercise Walkthrough
 ## Simple todo list
 
+https://github.com/Euricom/training-workshop-VUEJS/blob/master/examples/basics/readme.md
+
 Tips:
 
 - Add index.html and app.js
