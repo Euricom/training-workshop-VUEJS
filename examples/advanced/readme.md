@@ -13,7 +13,7 @@ Tips:
 - Bind to the ```value``` property of the textarea to set its content
 - Use [https://unpkg.com](https://unpkg.com) to get the marked library.
 
-     var convertedMarkdown = marked(this.markdown);
+          var convertedMarkdown = marked(this.markdown);
 
 See [Demo](http://spurious-veil.surge.sh)
 
