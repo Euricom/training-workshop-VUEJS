@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Sharships</h2>
+    <h2>Starships</h2>
     <ul>
       <li v-for="item of items">
         <router-link :to="{ name: 'Ship', params: { id: item.url } }">{{item.name}}</router-link>

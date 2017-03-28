@@ -192,7 +192,7 @@ To add linting inside VSCode: Preferences - Settings
 
 ## What is different from our html/JS app
 
-- NPM (Node Package Manager)
+- NPM (Node Package Manager), no CDN
 - EcmaScript 6+
 - Linting (static code check)
 - .Vue files (html + style + JS)
@@ -231,7 +231,7 @@ App.vue
 
 <script>
 export default {
-  data() {
+  data: function() {
     return {
       title: 'hello world'
     };
