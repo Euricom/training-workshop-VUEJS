@@ -164,7 +164,7 @@ And show the correct one depending of the completed state
 <li class="todo-state" v-for="todo in todos" @click="toggle(todo)">
     <span v-if="todo.completed"> &#9745; </span>
     <span v-else> &#9744; </span>
-    <p> {{ todo.task }} </p>
+    <span>{{ todo.task }} </span>
 </li>
 ```
 
