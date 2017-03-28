@@ -35,7 +35,7 @@ Optional:
 ```html
 <body>
     <!-- always add your script tags at the bottom of the body -->
-    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
 ```
@@ -58,7 +58,7 @@ Add it to the index.html
 <body>
     <h1>Todo App</h1>
     <!-- always add your script tags at the bottom of the body -->
-    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
 ```
