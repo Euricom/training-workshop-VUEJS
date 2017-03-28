@@ -150,7 +150,7 @@ This should display ```Markdown Html Viewer```
 ## Pass the markdown text into the component
 
 ```js
-// markdown.js
+// markdownHtmlViewer.js
 Vue.component('markdown', {
     // create a prop
     props: ['markdown'],
