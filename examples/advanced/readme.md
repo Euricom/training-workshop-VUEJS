@@ -1,6 +1,8 @@
 # Exercise Walkthrough
 ## Markup Editor and Preview
 
+https://github.com/Euricom/training-workshop-VUEJS/tree/master/examples/advanced
+
 Tips:
 
 - Add textbox for [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) input
