@@ -60,9 +60,12 @@ export default class Presentation extends React.Component {
           <Image src={images.logo.replace("/", "")} margin="0 20px 20px" height="200px" />
           <Image src={images.euricom.replace("/", "")} margin="0 20px 20px" height="200px" />
 
-          <Text margin="10px 0 0" textColor="secondary" size={1} fit bold>
+          <Text margin="10px 0 30px" textColor="secondary" size={1} fit bold>
             Vue.js
           </Text>
+
+          <a className="dark" href="https://github.com/Euricom/training-workshop-VUEJS" target="_blank">https://github.com/Euricom/training-workshop-VUEJS</a>
+
         </Slide>
 
         <Slide transition={[""]} bgColor="primary">
@@ -438,6 +441,8 @@ export default class Presentation extends React.Component {
             { loc: [20, 37] },
             { loc: [38, 49] },
             { loc: [50, 57] },
+            { loc: [58, 65] },
+            { loc: [89, 92] },
             { loc: [0, 59], note: "http://codepen.io/RobbertWolfs/pen/yMqvqQ" }
           ]}
         />

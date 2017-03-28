@@ -55,6 +55,14 @@
         >
         <button type="submit">Submit</button>
     </form>
+
+    <div class="form-group">
+        <input 
+            :value="value" 
+            @input="updateInput"
+        />
+        <span>{{ value }}</span>
+    </div>
 </div>
 
 
@@ -77,6 +85,11 @@
                 text: 'Green',
                 value: 'green',
             }],
+        },
+         methods: {
+            updateInput: function(event) {
+                this.value = event.target.value
+            },
         }
     });
 
