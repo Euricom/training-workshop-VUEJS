@@ -1,10 +1,15 @@
 # Exercise Walkthrough
 ## Markup Editor and Preview
 
+Tips:
+
 - Add textbox for [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) input
 - Create a vuejs component to view the markdown as html
 - Use the [marked library](https://github.com/chjj/marked) to convert markup 2 html
 - Add a button to reset (clear) the input area
+- Attach the ```input``` event of the textarea to get handle it changes
+- Bind to the ```value``` property of the textarea to set its content
+- Use [https://unpkg.com](https://unpkg.com) to get the marked library.
 
 See [Demo](http://spurious-veil.surge.sh)
 

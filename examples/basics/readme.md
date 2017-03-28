@@ -2,6 +2,7 @@
 ## Simple todo list
 
 Tips:
+
 - Add index.html and app.js
 - Load your VueJS with a script tag and CDN
 - Show a list of hardcoded (array) task items
